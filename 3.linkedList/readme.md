@@ -4,6 +4,25 @@
 
 A doubly linked list is a data structure where each node contains references to both the next and the previous nodes, allowing for bidirectional traversal.
 
+```mermaid
+graph LR
+    null1((null)):::nullStyle -->|prev| A[Value: 1]
+    A -->|next| B[Value: 2]
+    B -->|next| C[Value: 3]
+    C -->|next| D[Value: 4]
+    D -->|next| E[Value: 5]
+    E -->|next| null2((null)):::nullStyle
+
+    B -->|prev| A
+    C -->|prev| B
+    D -->|prev| C
+    E -->|prev| D
+
+
+    style null1 fill:#f96f,stroke:#333,stroke-width:2px
+    style null2 fill:#f96f,stroke:#333,stroke-width:2px
+```
+
 ## Node Structure
 
 Each node in the doubly linked list has the following properties:
