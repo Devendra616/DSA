@@ -21,7 +21,7 @@ The doubly linked list contains the following properties:
 
 ## Code
 
-Javascript code for doubly linked list is available from [here]().
+Javascript code for doubly linked list is available from [here](https://github.com/Devendra616/DSA/blob/main/3.linkedList/doublyLinkedList.js).
 
 ## Usage
 
