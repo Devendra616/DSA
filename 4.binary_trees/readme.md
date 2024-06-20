@@ -104,12 +104,6 @@ graph TD;
     6 --> 7((7))
     14 --> 13((13))
 ```
-## Video Example for Insertion in BST
-
-<video width="320" height="240" controls>
-  <source src="../assets/videos/insertion in bst.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ## Deletion in BST
 
@@ -155,8 +149,50 @@ graph TD;
 ## Video Example for Deletion in BST
 
 <video width="320" height="240" controls>
-  <source src="../assets/videos/deletion in BST.mp4" type="video/mp4">
+  <source src="https://www.youtube.com/watch?v=0mi8C5M9Ekw" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
+## Code for Deletion in BST
+  bst.js deleteNode(node, key) 
+  bst.js deleteNode2(node, key) 
 
+## Traversal in BST 
+BST traversal can be done in three main ways:
+
+- **In-order Traversal (LNR):<br>**
+    Visit the left subtree.<br>
+    Visit the root node.<br>
+    Visit the right subtree.<br>
+
+- **Pre-order Traversal (NLR):<br>**
+    Visit the root node.<br>
+    Visit the left subtree.<br>
+    Visit the right subtree.<br>
+
+- **Post-order Traversal (LRN):<br>**
+    Visit the left subtree.<br>
+    Visit the right subtree.<br>
+    Visit the root node.<br>
+
+## Example: In-order Traversal
+```
+Example: Suppose we have the following BST:
+
+
+    5
+   / \
+  3   8
+ / \   \
+2   4   9
+```
+The in-order traversal would be: 2 -> 3 -> 4 -> 5 -> 8 -> 9
+The pre-order traversal would be: 5 -> 3 -> 2 -> 4 -> 8 -> 9
+The post-order traversal would be: 2 -> 4 -> 3 -> 9 -> 8 -> 5
+
+## Code for Traversal in BST
+  bst.js inOrderTraversal()   
+  bst.js preOrderTraversal()   
+  bst.js postOrderTraversal()   
+
+   
