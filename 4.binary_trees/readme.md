@@ -153,6 +153,7 @@ graph TD;
   Your browser does not support the video tag.
 </video>
 
+[Youtube Link](https://www.youtube.com/watch?v=0mi8C5M9Ekw)
 ## Code for Deletion in BST
   bst.js deleteNode(node, key) 
   bst.js deleteNode2(node, key) 
@@ -195,4 +196,41 @@ The post-order traversal would be: 2 -> 4 -> 3 -> 9 -> 8 -> 5
   bst.js preOrderTraversal()   
   bst.js postOrderTraversal()   
 
-   
+## Depth First Traversal (DFT /DFS)
+DFS explores the tree by going as deep as possible along a branch before backtracking.
+
+There are three common variants of DFS: pre-order, in-order, and post-order.
+
+- Time Complexity: O(N) 
+- Space Complexity: O(H) (where H is the height of the tree)
+
+## Breadth First Traversal (DFT / BFS)
+  
+  BFS explores the tree level by level, starting from the root node. It visits all nodes at the current level before moving to the next level.
+
+  To implement BFS, we use a queue data structure.
+
+  - Time Complexity: O(N) (where N is the number of nodes in the tree)
+  - Space Complexity: O(N) (due to the queue)
+  
+Recrursion is usally avoided in bft becaues of queue enqueue operation.
+There is some chances of Race Conditions in bft due to recursion. 
+
+## Example: Breadth First Traversal
+```
+Example: Suppose we have the following BST:
+       1
+      / \
+     2   3
+    / \   \
+   4   5   6
+
+The BFS traversal would be: 1 -> 2 -> 3 -> 4 -> 5 -> 6
+```
+
+## Code for Breadth First Traversal in BST
+  bst.js breadthFirstTraversal()
+
+There is some chances of Race Conditions in bft due to recursion. 
+If multiple recursive calls happen concurrently (e.g., in a multi-threaded environment), there’s a chance of race conditions.
+For example, consider two nodes A and B at the same level. If their recursive calls overlap, the order of processing may not be guaranteed.
