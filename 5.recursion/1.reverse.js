@@ -18,6 +18,8 @@ function reverseRecursive(str) {
   if (str.length === 0) {
     return "";
   }
+  // return string[string.length - 1] + recursiveReverseString(string.substring(0, string.length - 1))
+
   let reversePart = reverseRecursive(str.substring(0, str.length - 1));
   let result = str[str.length - 1] + reversePart;
 
