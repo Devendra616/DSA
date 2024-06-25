@@ -78,3 +78,6 @@ function sumArray(arr, index = 0) {
 9.  [Remove adjacent duplicates](./9.removeAdjDup.js): Remove all adjacent duplicates and print one of the duplicated value. aaabcc => abc
 10. [Remove adjacent duplicates](./10.removeAdjDup2.js): Remove all adjacent duplicates and print none of the duplicated value. aaabcc => b
 11. [Implement length function](./11.implement_length.js): Implement length() function without using length or length()
+12. [Check Palindrome](./12.palindrome.js): Check if a string is palindrome or not
+13. [Key Occurance in Array](./13.key_occurance.js): Count the no.of occurance of a key in array or string.
+14. [Check Balanced Paranthesis](./14.balance_paranthesis.js): Check if paranthesis in array is balanced or not.
