@@ -60,3 +60,5 @@ then add the current node to visited
 2.  [Breadth First Search](./2.bfs.js) : Find breadth first search traversal of graph.
 3.  [Has Direct Path between](./3.hasDirectPath.js.js) : Check if there is direct path between start and end nodes of a graph.
 4.  [Create undirected graph](./4.undirectedGraph.js) : Edges of undirected graph is provided, create adjacency list of the graph and apply methods like hasPath, bfs, dfs etc.
+5.  [Connected Island](./5.connectedIslandCount.js) : Count no.of connected graphs.
+6.  [Biggest Island](./6.biggestIsland.js) : Find the size of biggest connected graph.
