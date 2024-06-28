@@ -23,8 +23,8 @@ loop => check if key DOES NOT exist, then add key => push both nodes
 // creates adjacency list from the edges provided
 function createGraph(edges) {
   const graph = {};
-  for (edge of edges) {
-    const [u, v] = edges;
+  for (const edge of edges) {
+    const [u, v] = edge;
     if (!(u in graph)) graph[u] = [];
     if (!(v in graph)) graph[v] = [];
 

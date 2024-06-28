@@ -62,3 +62,58 @@ then add the current node to visited
 4.  [Create undirected graph](./4.undirectedGraph.js) : Edges of undirected graph is provided, create adjacency list of the graph and apply methods like hasPath, bfs, dfs etc.
 5.  [Connected Island](./5.connectedIslandCount.js) : Count no.of connected graphs.
 6.  [Biggest Island](./6.biggestIsland.js) : Find the size of biggest connected graph.
+7.  [Shortest Path](./7.shortestPath.js) : Find the shortest path length between two nodes.
+8.  [Island in grid](./8.gridIsland.js) : Find no.of islands from the grid.
+9.  [Max-Min in island grid](./9.minMaxIslandGrid.js) : Find smallest and largest island size in grid.
+
+## Discussion on Set
+
+1.  **Characteristics of Sets:**
+
+    - **Uniqueness**: Sets automatically remove duplicates, ensuring every element is unique.
+    - **Unordered**: While elements in a set can be iterated over, their order is not guaranteed.
+    - **Iterable**: Sets allow the use of loops to go through their elements.
+
+2.  **Opertions on Sets:**
+    - Sets provide methods like `add`, `delete`, and `has` for managing data.
+    - You can iterate over Sets using `forEach` or `for...of`.
+    - Sets can be converted to arrays for more traditional data handling.
+    - Advanced operations like union, intersection, and difference can be implemented with ease.
+3.  **Arrays and Sets:**
+
+```javascript
+		const arr1 = [1,2]
+		const arr2= [1,2]
+		const set = new Set()
+		set.add(arr1)
+		set.add(arr2)
+		console.log(set.size) //2
+		console.log(set) //{[1,2],[1,2]}
+		console.log(set.has([1,2])//compares with new reference
+		In javascript array are stored as reference. So arr1 and arr2 both are having different references.
+		const arr3 = '[1,2]'
+		const arr4 = '[1,2]'
+		set.add(arr3) //same as set.add(JSON.stringify(arr1))
+		set.add(arr4) //same as set.add(JSON.stringify(arr2))
+		console.log(set) //{'[1,2]'}
+```
+
+```javascript
+const start = "a";
+const newSet = new Set(start);
+const newSetv2 = new Set([start]);
+console.log(newSet); //{'a'}
+console.log(newSetv2); //{'a'}
+```
+
+Both are same if start is 'a' single letter. But it makes difference when node is with multiple characters.
+
+```javascript
+const start = "amit";
+const newSet = new Set(start);
+const newSetv2 = new Set([start]);
+console.log(newSet); //{ 'a', 'm', 'i', 't' }
+console.log(newSetv2); //{ 'amit' }
+```
+
+So [start] this type is used for safety.
