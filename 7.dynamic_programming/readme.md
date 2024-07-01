@@ -65,5 +65,6 @@ Both approaches aim to optimize computation time by avoiding repeated calculatio
 2.  [Fib Tabulation](./2.bfs.js) : Find breadth first search traversal of graph.
 3.  [Coins Sum](./3.coins_sum_memoization.js) : If it is possible to form a specific amount provided using coins of particular denomination. Coins are unlimited.
 4.  [Min and Max Coin Sum](./4.min_max_coin_sum.js) : Find minimum and max no of coins required to reach a specific amount using particular denomination.
-5.  [Robot Destination](./5.robot_destn.js) : Find no of possible unique paths that can be used to reach from a point to destination point in a grid provided.
+5.  [Robot Destination](./5.robot_destn.js) : Find no of possible unique paths that can be used to reach from a point to destination point in a grid provided. [Leetcode question](https://leetcode.com/problems/unique-paths/)
 6.  [Min and Max path count in grid](./6.min_max_path_count.js) : Find minimum/maximum cost of reaching last point of grid from first point. You can move only right and down.
+7.  [House Robber](./7.house_robber.js) : Find maximum cost of non adjacent traversal in array [Leetcode question](https://leetcode.com/problems/house-robber/description/)
