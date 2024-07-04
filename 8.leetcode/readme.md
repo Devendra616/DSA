@@ -15,3 +15,11 @@ Problems from leetcode 75
 6.  [Reverse words in a string](./6.reverseWords.js) : Write a function that takes a string as input and reverses the order of the words in the string. [Leetcode link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
 
 7.  [Product of array except self](./7.productExceptSelf.js) : Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer. [Leetcode link](https://leetcode.com/problems/product-of-array-except-self/description/?envType=study-plan-v2&envId=leetcode-75)
+
+8.  [Increasing Triplet Subsequence](./8.increasingTriplet.js) : Given an integer array nums, return true if there exists a triple of indices (i, j, k) such that i < j < k and nums[i] < nums[j] < nums[k]. If no such indices exists, return false. [Leetcode link](https://leetcode.com/problems/increasing-triplet-subsequence/description/?envType=study-plan-v2&envId=leetcode-75)
+
+9.  [String Compression](./9.string_compression.js) : Given an array of characters, return a new string formed by repeating each character as many times as possible. [Leetcode link](https://leetcode.com/problems/string-compression/?envType=study-plan-v2&envId=leetcode-75)
+
+10. [Move Zeroes](./10.move_zeroes.js) : Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements. [Leetcode link](https://leetcode.com/problems/move-zeroes/description/?envType=study-plan-v2&envId=leetcode-75)
+
+11. [Sub Sequence](./11.sub_sequence.js) : Given two strings s and t, return true if s is a subsequence of t, or false otherwise. [Leetcode link](https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=leetcode-75)
