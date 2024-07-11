@@ -20,7 +20,9 @@ Output: false
  * @param {string} t
  * @return {boolean}
  */
-var isSubsequence = function (s, t) {
+
+/* var isSubsequence = function (s, t) {
+
   let i = 0;
   let lastPos = -1;
 
@@ -46,3 +48,20 @@ var isSubsequence = function (s, t) {
 
   return true;
 };
+ */
+
+var isSubsequence = function (s, t) {
+  let sIndex = 0;
+  if (s.length === 0) return true;
+
+  for (let i = 0; i < t.length; i++) {
+    if (s[sIndex] === t[i]) sIndex++;
+
+    if (sIndex === s.length) return true;
+  }
+  return false;
+};
+
+s = "b";
+t = "c";
+console.log(isSubsequence(s, t));

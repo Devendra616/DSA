@@ -23,3 +23,17 @@ Problems from leetcode 75
 10. [Move Zeroes](./10.move_zeroes.js) : Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements. [Leetcode link](https://leetcode.com/problems/move-zeroes/description/?envType=study-plan-v2&envId=leetcode-75)
 
 11. [Sub Sequence](./11.sub_sequence.js) : Given two strings s and t, return true if s is a subsequence of t, or false otherwise. [Leetcode link](https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=leetcode-75)
+
+12. [Container with most water](./12.container_water.js) : Given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a container, such that the container contains the most water. Return the maximum amount of water a container can store. [Leetcode link](https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=leetcode-75)
+
+13. [K sum](./13.K_sum.js) : You are given an integer array nums and an integer k. In one operation, you can pick two numbers from the array whose sum equals k and remove them from the array. Return the maximum number of operations you can perform on the array. [Leetcode link](https://leetcode.com/problems/max-number-of-k-sum-pairs/description/?envType=study-plan-v2&envId=leetcode-75)
+
+14. [Max average subarray](./14.max_avg_subarray.js) : You are given an integer array nums consisting of n elements, and an integer k. Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value. [Leetcode link](https://leetcode.com/problems/maximum-average-subarray-i/description/?envType=study-plan-v2&envId=leetcode-75)
+
+15. [Max vowels substring](./15.max_vowels_substring.js) : Given a string s and an integer k, return the maximum number of vowel letters in any substring of s with length k. 1 <= k <= s.length [Leetcode link](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/?envType=study-plan-v2&envId=leetcode-75)
+
+16. [Max consecutive ones](./16.max_cons_ones.js) : Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's. [Leetcode link](https://leetcode.com/problems/max-consecutive-ones-iii/description/?envType=study-plan-v2&envId=leetcode-75)
+
+17. [Longest subarray after delete](./17.longestSubarrayAfterDel.js) : Given a binary array nums, you should delete one element from it. Return the size of the longest non-empty subarray containing only 1's in the resulting array. Return 0 if there is no such subarray. [Leetcode link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/?envType=study-plan-v2&envId=leetcode-75)
+
+18. [Highest altitude](./18.hightestAltitude.js) : There is a biker going on a road trip. The road trip consists of n + 1 points at different altitudes. The biker starts his trip on point 0 with altitude equal 0. You are given an integer array gain of length n where gain[i] is the net gain in altitude between points i​​​​​​ and i + 1 for all (0 <= i < n). Return the highest altitude of a point. [Leetcode link](https://leetcode.com/problems/find-the-highest-altitude/description/?envType=study-plan-v2&envId=leetcode-75)
