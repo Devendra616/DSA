@@ -163,10 +163,115 @@ Let's sort the array `[38, 27, 43, 3, 9, 82, 10]` using Merge Sort.
 ### Code
 [View Code](./3.merge.js)
 
+## Quick Sort
+Quick Sort is a highly efficient sorting algorithm and is based on the divide-and-conquer approach. It works by selecting a pivot element and partitioning the array around the pivot. It then recursively sorts the sub-arrays on either side of the pivot.
 
+### How It Works
 
+1. **Divide**: Choose a pivot element from the array.
+2. **Partition**: Rearrange the elements so that all elements less than the pivot come before it, and all elements greater than the pivot come after it.
+3. **Conquer**: Recursively apply the above steps to the sub-arrays of elements with smaller and larger values.
 
+### Example
+Let's sort the array `[5, 2, 8, 3, 1, 7, 4, 6]` using Quick Sort.    
+    
+### Step-by-Step
+    
+1. **Initial Array**: `[10, 7, 8, 9, 1, 5]`
 
+2. **First Pass**:
+   - Choose `5` as the pivot.
+   - Partition the array:
+     - Compare `10` with `5`: `10` > `5`, no swap.
+     - Compare `7` with `5`: `7` > `5`, no swap.
+     - Compare `8` with `5`: `8` > `5`, no swap.
+     - Compare `9` with `5`: `9` > `5`, no swap.
+     - Compare `1` with `5`: `1` < `5`, swap `1` and `10`.
+   - Array after partition: `[1, 7, 8, 9, 10, 5]`
+   - Swap pivot `5` with `7`: `[1, 5, 8, 9, 10, 7]`
+   - Pivot `5` is now at its correct position.
 
+3. **Second Pass**:
+   - Apply Quick Sort to the left sub-array `[1]` (already sorted).
+   - Apply Quick Sort to the right sub-array `[8, 9, 10, 7]`.
 
+4. **Third Pass**:
+   - Choose `7` as the pivot for the right sub-array.
+   - Partition the array:
+     - Compare `8` with `7`: `8` > `7`, no swap.
+     - Compare `9` with `7`: `9` > `7`, no swap.
+     - Compare `10` with `7`: `10` > `7`, no swap.
+   - Array after partition: `[1, 5, 8, 9, 10, 7]`
+   - Swap pivot `7` with `8`: `[1, 5, 7, 9, 10, 8]`
+   - Pivot `7` is now at its correct position.
+
+5. **Fourth Pass**:
+   - Apply Quick Sort to the left sub-array `[8, 9, 10]`.
+
+6. **Fifth Pass**:
+   - Choose `10` as the pivot.
+   - Partition the array:
+     - Compare `8` with `10`: `8` < `10`, swap `8` with `8`.
+     - Compare `9` with `10`: `9` < `10`, swap `9` with `9`.
+   - Array after partition: `[1, 5, 7, 8, 9, 10]`
+   - Pivot `10` is now at its correct position.
+
+7. **Sorted Array**: `[1, 5, 7, 8, 9, 10]`
+
+### Complexity
+| **Case**       | **Time Complexity** | **Space Complexity** |
+|----------------|---------------------|----------------------|
+| Best Case      | $$O(n \log n)$$     | $$O(n)$$             |
+| Average Case   | $$O(n \log n)$$     | $$O(n)$$             |
+| Worst Case     | $$O(n^2)$$          | $$O(n)$$             |
+
+### Code
+[View Code](./4.quick.js)   
+
+## Selection Sort
+Selection Sort is a simple and efficient sorting algorithm. It works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the list and moving it to the sorted portion of the list.
+
+## Algorithm
+
+1. Start with the first element as the minimum.
+2. Compare this minimum with the rest of the elements.
+3. If a smaller element is found, update the minimum.
+4. Swap the minimum element with the first element.
+5. Move to the next element and repeat the process until the entire array is sorted.
+
+### Example
+
+1. **Initial Array**: `[64, 25, 12, 22, 11]`
+
+2. **First Pass**:
+   - Find the minimum element in the array `[64, 25, 12, 22, 11]`, which is `11`.
+   - Swap `11` with the first element `64`.
+   - Array after first pass: `[11, 25, 12, 22, 64]`
+
+3. **Second Pass**:
+   - Find the minimum element in the remaining array `[25, 12, 22, 64]`, which is `12`.
+   - Swap `12` with the second element `25`.
+   - Array after second pass: `[11, 12, 25, 22, 64]`
+
+4. **Third Pass**:
+   - Find the minimum element in the remaining array `[25, 22, 64]`, which is `22`.
+   - Swap `22` with the third element `25`.
+   - Array after third pass: `[11, 12, 22, 25, 64]`
+
+5. **Fourth Pass**:
+   - Find the minimum element in the remaining array `[25, 64]`, which is `25`.
+   - Swap `25` with itself (no change).
+   - Array after fourth pass: `[11, 12, 22, 25, 64]`
+
+6. **Sorted Array**: `[11, 12, 22, 25, 64]`
+
+### Complexity
+| **Case**       | **Time Complexity** | **Space Complexity** |
+|----------------|---------------------|----------------------|
+| Best Case      | $$O(n^2)$$          | $$O(1)$$             |
+| Average Case   | $$O(n^2)$$          | $$O(1)$$             |
+| Worst Case     | $$O(n^2)$$          | $$O(1)$$             |
+
+### Code
+[View Code](./5.selection.js)
 
