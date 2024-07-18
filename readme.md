@@ -28,7 +28,14 @@ Discover various algorithms that operate on these data structures, from basic tr
 
 - **Dynamic Programming**: Dynamic Programming is a technique where the solution to a problem is built up from the solutions to smaller instances of the same problem. [Explore Dynamic Programming](7.dynamic_programming/readme.md)
 
-  
+### Leetcode
+
+Leetcode is a platform for practicing and preparing for technical interviews. It is a great way to practice and improve your skills in JavaScript. You can find a variety of problems to solve on the website.  
+Here I have listed and solved some of the problems on Leetcode. You can find the solutions [here](8.leetcode/readme.md)
+
+### Machine Coding
+
+Machine Coding is a technique where you write code that is executed by a machine. In this round, you will be writing code in live coding sessions. You can practice this and find the solutions [here](9.machine_coding/readme.md)
 
 ## Contributing
 
